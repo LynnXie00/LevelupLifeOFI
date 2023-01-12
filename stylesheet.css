@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           lvluplife.com - 1/12/2023, 10:39:54 AM
+@name           Overgrown Flowery Interface for lvluplife.com
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
-@description    A new userstyle
-@author         Me
+@description    An update of the lvluplife.com style to match the Overgrown Flowery Interface (https://www.nexusmods.com/stardewvalley/mods/6166?tab=images&BH=3) I use for Stardew Valley game.
+@author         Lynn Xie
 ==/UserStyle== */
 @-moz-document domain("lvluplife.com") {
     :root {
@@ -167,6 +167,11 @@
         border-color:var(--border-color)!important;
         
     }
+    .btn-default:active{
+        background-color:var(--base-color2)!important;
+        border-color:var(--border-color)!important;
+    }
+    
     .glow .taskname{
         color: var(--normal-text-color);
     }
@@ -223,6 +228,9 @@
         color: var(--heading-color);
         font-family: var(--heading-font);
     }
+    .blue1{
+        color:var(--bar-color2);
+    }
     .ar_mid{
         background:var(--base-color);
         border-color:var(--border-color);
@@ -265,5 +273,19 @@
     .xpbar {
         background: linear-gradient(to bottom, var(--base-color) 0, var(--base-color) 41%, var(--base-color) 100%);
         border-color: var(--border-color);
+    }
+    #mainviewdropdown{
+        background-color:var(--base-color2);
+        border-color:var(--border-color);
+    }
+    #mainviewdropdown a{
+        color:var(--normal-text-color);
+    }
+    #mainviewdropdown a:hover{
+    background-color:var(--base-color2);
+    color:white;
+    }
+    #mainviewdropdown li .current{
+        color:var(--highlight-text-color);
     }
 }
